@@ -1,0 +1,20 @@
+{
+  "name": "scratch",
+  "version": "1.0.0",
+  "description": "scratch contracts written with Foundry",
+  "main": "index.js",
+  "author": "Byeong Min Park",
+  "license": "MIT",
+  "scripts": {
+    "build": "forge build",
+    "fix": "solhint --config ./.solhint.json 'src/**/*.sol' --fix",
+    "format": "prettier --write 'src/**/*.sol'",
+    "lint": "solhint --config ./.solhint.json 'src/**/*.sol'",
+    "test": "forge test -vvv"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.24",
+    "solhint": "^3.3.7"
+  }
+}
